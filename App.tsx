@@ -5,39 +5,39 @@ const tools = [
     {
         name: 'Power Apps',
         icon: (
-             <svg className="w-14 h-14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 6L10 13V27L24 34L38 27V13L24 6Z" fill="#742774"/>
-                <path d="M22 20.5V27.5L29 24L22 20.5Z" fill="white"/>
+            <svg className="w-24 h-24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4L42 16V32L24 44L6 32V16L24 4Z" fill="#742774"/>
+                <path d="M21 18L32 24L21 30V18Z" fill="white"/>
             </svg>
         ),
     },
     {
         name: 'Power Automate',
         icon: (
-             <svg className="w-14 h-14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 20H28C30.2091 20 32 21.7909 32 24C32 26.2091 30.2091 28 28 28H12" stroke="#0066FF" strokeWidth="2.5"/>
-                <path d="M20 12L36 24L20 36" stroke="#0066FF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+             <svg className="w-24 h-24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 20H30C32.21 20 34 21.79 34 24C34 26.21 32.21 28 30 28H12V20Z" fill="#0066FF" />
+                <path d="M22 12L38 24L22 36V12Z" fill="#0066FF" />
             </svg>
         ),
     },
     {
         name: 'Power BI',
         icon: (
-            <svg className="w-14 h-14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="13" y="20" width="6" height="14" rx="1" fill="#F2C811"/>
-                <rect x="21" y="14" width="6" height="20" rx="1" fill="#F2C811"/>
-                <rect x="29" y="24" width="6" height="10" rx="1" fill="#F2C811"/>
+            <svg className="w-24 h-24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 38V22C10 21.4477 10.4477 21 11 21H17C17.5523 21 18 21.4477 18 22V38H10Z" fill="#F2C811"/>
+                <path d="M20 38V12C20 11.4477 20.4477 11 21 11H27C27.5523 11 28 11.4477 28 12V38H20Z" fill="#F2C811"/>
+                <path d="M30 38V28C30 27.4477 30.4477 27 31 27H37C37.5523 27 38 27.4477 38 28V38H30Z" fill="#F2C811"/>
             </svg>
         ),
     },
     {
         name: 'Teams',
         icon: (
-            <svg className="w-14 h-14" viewBox="0 0 48 48" fill="#6264A7" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 17C22 19.2091 20.2091 21 18 21C15.7909 21 14 19.2091 14 17C14 14.7909 15.7909 13 18 13C20.2091 13 22 14.7909 22 17Z"/>
-                <path d="M14.0001 23C11.7909 23 10 24.7909 10 27V32H18V27C18 24.7909 16.2091 23 14.0001 23Z"/>
-                <path d="M29 20C29 22.2091 27.2091 24 25 24C22.7909 24 21 22.2091 21 20C21 17.7909 22.7909 16 25 16C27.2091 16 29 17.7909 29 20Z"/>
-                <path d="M30.4143 25.1714C29.0714 24.4286 27.5714 24 26 24H25C22.791 24 21 25.791 21 28V32H34V28C34 26.8571 32.5714 25.4286 30.4143 25.1714Z"/>
+            <svg className="w-24 h-24" viewBox="0 0 48 48" fill="#6264A7" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29 16C29 18.2091 27.2091 20 25 20C22.7909 20 21 18.2091 21 16C21 13.7909 22.7909 12 25 12C27.2091 12 29 13.7909 29 16Z"/>
+                <path d="M25 22C21.134 22 18 25.134 18 29V36H32V29C32 25.134 28.866 22 25 22Z"/>
+                <path opacity="0.6" d="M21.5 17C21.5 19.4853 19.4853 21.5 17 21.5C14.5147 21.5 12.5 19.4853 12.5 17C12.5 14.5147 14.5147 12.5 17 12.5C19.4853 12.5 21.5 14.5147 21.5 17Z"/>
+                <path opacity="0.6" d="M17 23.5C13.134 23.5 10 26.634 10 30.5V36H20V30.5C20 26.634 16.866 23.5 17 23.5Z"/>
             </svg>
         ),
     },
@@ -79,7 +79,6 @@ const App: React.FC = () => {
                     </h1>
                     <p className="text-3xl md:text-4xl text-gray-300">Sección: Administración + Tecnología</p>
                 </div>
-                 <span className="absolute bottom-8 right-8 text-gray-500 font-bold text-lg">01</span>
             </section>
 
 
@@ -102,7 +101,6 @@ const App: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <span className="absolute bottom-8 right-8 text-gray-400 font-bold text-lg">02</span>
             </section>
 
             {/* Slide 3: Lo que nosotros hacemos */}
@@ -124,7 +122,6 @@ const App: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                 <span className="absolute bottom-8 right-8 text-gray-500 font-bold text-lg">03</span>
             </section>
             
             {/* Slide 4: Beneficios */}
@@ -146,7 +143,6 @@ const App: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <span className="absolute bottom-8 right-8 text-gray-400 font-bold text-lg">04</span>
             </section>
 
 
@@ -167,7 +163,6 @@ const App: React.FC = () => {
                         ))}
                     </div>
                 </div>
-                <span className="absolute bottom-8 right-8 text-gray-500 font-bold text-lg">05</span>
             </section>
 
             {/* Slide 6: KPIs */}
@@ -186,7 +181,6 @@ const App: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <span className="absolute bottom-8 right-8 text-gray-500 font-bold text-lg">06</span>
             </section>
 
             {/* Slide 7: Herramientas */}
@@ -195,16 +189,15 @@ const App: React.FC = () => {
                     <h2 className="text-5xl md:text-6xl font-bold text-white mb-16">🛠 Herramientas:</h2>
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-5xl mx-auto">
                         {tools.map((tool, index) => (
-                             <div key={index} className="bg-white p-8 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center transition-transform transform hover:scale-105 duration-300 border border-gray-100">
-                                <div className="h-28 w-28 bg-gray-50 rounded-full flex items-center justify-center mb-5">
+                             <div key={index} className="bg-white p-12 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center transition-transform transform hover:scale-105 duration-300 border border-gray-100">
+                                <div className="h-40 w-40 bg-gray-50 rounded-full flex items-center justify-center mb-8">
                                     {tool.icon}
                                 </div>
-                                <span className="font-semibold text-2xl text-gray-700">{tool.name}</span>
+                                <span className="font-semibold text-3xl text-gray-700">{tool.name}</span>
                             </div>
                         ))}
                     </div>
                 </div>
-                <span className="absolute bottom-8 right-8 text-gray-500 font-bold text-lg">07</span>
             </section>
 
         </div>
