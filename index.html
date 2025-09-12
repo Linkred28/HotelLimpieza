@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strategic Management Framework</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #0A2F5D;
+            --accent-green: #00A680;
+            --primary-gray: #212529;
+            --text-dark: #212529;
+            --bg-light: #f8f9fa;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-gray);
+            color: var(--text-dark);
+            overscroll-behavior-y: contain;
+        }
+
+        .bg-primary-dark { background-color: var(--primary-dark); }
+        .text-primary-dark { color: var(--primary-dark); }
+        .border-primary-dark { border-color: var(--primary-dark); }
+        .bg-primary-gray { background-color: var(--primary-gray); }
+        .text-accent-green { color: var(--accent-green); }
+        .text-dark { color: var(--text-dark); }
+        .bg-light { background-color: var(--bg-light); }
+
+        .presentation-container {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        .slide {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: start;
+            position: relative;
+            padding: 4rem 2rem;
+        }
+        @media (max-width: 768px) {
+            .slide {
+                padding: 4rem 1rem;
+                height: auto;
+                min-height: 100vh;
+            }
+        }
+        .slide-content {
+            max-width: 1200px;
+            width: 100%;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .slide-content.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Timeline styles */
+        .timeline-container {
+            position: relative;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #dee2e6; /* gray-300 */
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            transition: background-color 0.3s ease;
+        }
+        .bg-primary-dark .timeline-container::after,
+        .bg-primary-gray .timeline-container::after {
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-left {
+            left: 0;
+        }
+        .timeline-right {
+            left: 50%;
+        }
+        .timeline-left::before {
+            content: ' ';
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid transparent;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        .timeline-right::before {
+            content: ' ';
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid transparent;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -14px;
+            background-color: white;
+            border: 4px solid var(--primary-dark);
+            top: 18px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-right::after {
+            left: -14px;
+        }
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .timeline-container::after {
+                left: 20px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 15px;
+            }
+            .timeline-right {
+                left: 0%;
+            }
+            .timeline-left::before, .timeline-right::before {
+                left: 40px;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            .timeline-left::after, .timeline-right::after {
+                left: 8px;
+            }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
