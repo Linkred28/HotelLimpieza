@@ -106,7 +106,7 @@ const App: React.FC = () => {
             {/* Slide 3: Lo que nosotros hacemos */}
             <section id="slide3" className="slide bg-primary-gray">
                  <div className="slide-content">
-                    <h2 className="text-5xl md:text-6xl font-bold text-white mb-12 text-center">Lo que nosotros hacemos:</h2>
+                    <h2 className="text-5xl md:text-6xl font-bold text-white mb-12 text-center">Nuestra propuesta es:</h2>
                     <div className="max-w-5xl mx-auto space-y-8">
                         <div className="bg-light p-6 rounded-xl shadow-lg flex items-center space-x-6 border border-gray-200">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-16 h-16 text-primary-dark flex-shrink-0"><path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V6a2.25 2.25 0 012.25-2.25h3.75a2.25 2.25 0 012.25 2.25v.75m-10.5 6v6a2.25 2.25 0 002.25 2.25h3.75a2.25 2.25 0 002.25-2.25v-6" /><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75h3.75m-3.75 3h3.75M9 18h3.75m-3.75-9h3.75" /></svg>
@@ -149,12 +149,12 @@ const App: React.FC = () => {
             {/* Slide 5: Entregables */}
             <section id="slide5" className="slide bg-primary-gray">
                 <div className="slide-content">
-                    <h2 className="text-5xl md:text-6xl font-bold text-white mb-12 text-center">📦 Entregables:</h2>
+                    <h2 className="text-5xl md:text-6xl font-bold text-white mb-12 text-center">📦 Entregables (con contexto):</h2>
                     <div className="max-w-4xl mx-auto space-y-6">
                         {[
-                            "Mapa de procesos documentado.",
-                            "Checklists digitales de limpieza y mantenimiento.",
-                            "Tablero de incidencias en Power BI."
+                            "Mapa de procesos documentado → muestra claramente qué tareas corresponden a quién, evitando confusiones y omisiones.",
+                            "Checklists digitales de limpieza y mantenimiento → aseguran que cada suite cumpla el mismo estándar diario y generan alertas inmediatas ante incumplimientos.",
+                            "Tablero de incidencias en Power BI → permite a la gerencia dar seguimiento en tiempo real y tomar decisiones rápidas para mejorar la experiencia del huésped."
                         ].map((item, index) => (
                             <div key={index} className="bg-light p-6 rounded-lg flex items-center space-x-6 text-left shadow-md transition-all hover:shadow-lg hover:bg-gray-200 border border-gray-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-10 h-10 text-accent-green flex-shrink-0"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
@@ -171,13 +171,13 @@ const App: React.FC = () => {
                     <h2 className="text-5xl md:text-6xl font-bold text-white mb-16 text-center">📈 KPIs:</h2>
                     <div className="timeline-container">
                         <div className="timeline-item timeline-left">
-                            <div className="timeline-content"><h3 className="text-3xl font-bold text-dark">Tiempo promedio de resolución de incidencias.</h3></div>
+                            <div className="timeline-content"><h3 className="text-3xl font-bold text-dark">MTTR (Mean Time To Resolution – tiempo promedio que tarda el hotel en resolver una incidencia desde que se reporta hasta que queda resuelta).</h3></div>
                         </div>
                         <div className="timeline-item timeline-right">
-                            <div className="timeline-content"><h3 className="text-3xl font-bold text-dark">% de suites con checklist completado.</h3></div>
+                            <div className="timeline-content"><h3 className="text-3xl font-bold text-dark">% de suites con checklist completado (mide la constancia en la operación diaria).</h3></div>
                         </div>
                         <div className="timeline-item timeline-left">
-                            <div className="timeline-content"><h3 className="text-3xl font-bold text-dark">Niveles de satisfacción en limpieza en plataformas online.</h3></div>
+                            <div className="timeline-content"><h3 className="text-3xl font-bold text-dark">Calificación de limpieza en reseñas (promedio específico de limpieza en plataformas como Booking o Google).</h3></div>
                         </div>
                     </div>
                 </div>
@@ -186,7 +186,7 @@ const App: React.FC = () => {
             {/* Slide 7: Herramientas */}
             <section id="slide7" className="slide bg-primary-gray">
                 <div className="slide-content text-center">
-                    <h2 className="text-5xl md:text-6xl font-bold text-white mb-16">🛠 Herramientas:</h2>
+                    <h2 className="text-5xl md:text-6xl font-bold text-white mb-16">🛠 Herramientas: Power Apps, Power Automate, Power BI, Teams.</h2>
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-5xl mx-auto">
                         {tools.map((tool, index) => (
                              <div key={index} className="bg-white p-12 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center transition-transform transform hover:scale-105 duration-300 border border-gray-100">
