@@ -131,7 +131,11 @@ const App: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         <div className="bg-light p-8 rounded-xl shadow-lg flex flex-col items-center text-center border border-gray-200 h-full justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-16 h-16 text-primary-dark mb-6"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                            <h3 className="font-semibold text-2xl text-dark">Menos quejas en reseñas (–70% en 3 meses).</h3>
+                            <h3 className="font-semibold text-2xl text-dark">
+                                Menos quejas en reseñas
+                                <br />
+                                (–70% en 3 meses).
+                            </h3>
                         </div>
                         <div className="bg-light p-8 rounded-xl shadow-lg flex flex-col items-center text-center border border-gray-200 h-full justify-center">
                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-16 h-16 text-primary-dark mb-6"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
@@ -186,7 +190,7 @@ const App: React.FC = () => {
             {/* Slide 7: Herramientas */}
             <section id="slide7" className="slide bg-primary-gray">
                 <div className="slide-content text-center">
-                    <h2 className="text-5xl md:text-6xl font-bold text-white mb-16">🛠 Herramientas: Power Apps, Power Automate, Power BI, Teams.</h2>
+                    <h2 className="text-5xl md:text-6xl font-bold text-white mb-16">🛠 Herramientas:</h2>
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-5xl mx-auto">
                         {tools.map((tool, index) => (
                              <div key={index} className="bg-white p-12 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center transition-transform transform hover:scale-105 duration-300 border border-gray-100">
