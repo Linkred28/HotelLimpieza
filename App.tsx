@@ -175,13 +175,34 @@ const App: React.FC = () => {
                     <h2 className="text-5xl md:text-6xl font-bold text-white mb-16 text-center">📈 KPIs:</h2>
                     <div className="timeline-container">
                         <div className="timeline-item timeline-left">
-                            <div className="timeline-content"><h3 className="text-3xl font-bold text-dark">MTTR (Mean Time To Resolution – tiempo promedio que tarda el hotel en resolver una incidencia desde que se reporta hasta que queda resuelta).</h3></div>
+                            <div className="timeline-content">
+                                <h3 className="text-3xl font-bold text-dark">
+                                    MTTR
+                                    <span className="block text-gray-600 mt-2 font-normal">
+                                        (Mean Time To Resolution – tiempo promedio que tarda el hotel en resolver una incidencia desde que se reporta hasta que queda resuelta).
+                                    </span>
+                                </h3>
+                            </div>
                         </div>
                         <div className="timeline-item timeline-right">
-                            <div className="timeline-content"><h3 className="text-3xl font-bold text-dark">% de suites con checklist completado (mide la constancia en la operación diaria).</h3></div>
+                            <div className="timeline-content">
+                                <h3 className="text-3xl font-bold text-dark">
+                                    % de suites con checklist completado
+                                    <span className="block text-gray-600 mt-2 font-normal">
+                                        (mide la constancia en la operación diaria).
+                                    </span>
+                                </h3>
+                            </div>
                         </div>
                         <div className="timeline-item timeline-left">
-                            <div className="timeline-content"><h3 className="text-3xl font-bold text-dark">Calificación de limpieza en reseñas (promedio específico de limpieza en plataformas como Booking o Google).</h3></div>
+                            <div className="timeline-content">
+                                <h3 className="text-3xl font-bold text-dark">
+                                    Calificación de limpieza en reseñas
+                                    <span className="block text-gray-600 mt-2 font-normal">
+                                        (promedio específico de limpieza en plataformas como Booking o Google).
+                                    </span>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
